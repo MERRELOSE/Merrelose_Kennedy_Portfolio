@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test AOS</title>
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+</head>
+<body>
+  <div data-aos="fade-up" style="background-color: lightblue; height: 200px; margin: 100px 0;">
+    <h2>Animation Test</h2>
+  </div>
+  
+  <div style="height: 100vh;">
+    <h1>Scroll down</h1>
+  </div>
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <h2>Animation Test</h2>
+  </div>
+  <script src="node_modules/aos/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
