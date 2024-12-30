@@ -99,7 +99,7 @@
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 			                    <i class="fa fa-bars"></i>
 			                </button>
-			                <a class="navbar-brand" href="index.html">browny</a>
+			                <a class="navbar-brand" href="index.html">mkdesign</a>
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
 
@@ -112,7 +112,6 @@
 			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
 			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
 			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-			                    <li class="smooth-menu"><a href="#clients">clients</a></li>
 			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
@@ -126,107 +125,257 @@
 		</header><!-- /.top-area-->
 		<!-- top-area End -->
 	
-		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hi <span>,</span> i am <br> browny <br> star <span>.</span>   </h2>
-							<p>ui/ux designer and web developer</p>
-							<a href="assets/download/browney.html" download>download resume</a>
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
-			</div><!-- /.container-->
+		<!-- Welcome Hero Start -->
+<section id="welcome-hero" class="welcome-hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center">
+                <div class="hero-text">
+                    <h1>
+                        Hello<span>,</span> I am <br>
+                        <span class="name-highlight" id="typewriter"></span>
+                    </h1>
+                    <p class="hero-subtitle">UI/UX Designer & Web Developer</p>
+                    <a href="assets/download/browney.html" class="btn btn-primary contact-btn" download>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Welcome Hero End -->
 
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
+<!-- CSS -->
+<style>
+    /* Arrière-plan harmonisé */
+    .welcome-hero {
+        background: linear-gradient(to bottom, #1a1a1a, #333); /* Remplacez par vos couleurs */
+        color: #ffffff; /* Texte principal */
+        padding: 100px 0;
+        text-align: center;
+        position: relative;
+    }
+
+    /* Texte principal */
+    .welcome-hero .hero-text h1 {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    /* Texte du nom animé */
+    .welcome-hero .hero-text h1 .name-highlight {
+        color: #f4b400; /* Couleur du texte animé (jaune/orange par défaut) */
+        text-transform: uppercase;
+        border-right: 2px solid #f4b400; /* Couleur du curseur clignotant */
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .welcome-hero .hero-text h1 span {
+        color: #007bff; /* Accent secondaire (vert par défaut) */
+    }
+
+    /* Sous-titre */
+    .welcome-hero .hero-subtitle {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        color: #e0e0e0; /* Texte secondaire */
+    }
+
+    /* Bouton Télécharger */
+
+	contact-btn {
+		display: inline-block;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1a1a1a; /* Texte du bouton */
+        background-color: #007bff; /* Couleur de fond du bouton */
+        text-transform: uppercase;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        border: none;
+    }
+
+    .contact-btn:hover {
+        background-color: #0056b3; /* Couleur au survol */
+		color: #fff;
+        padding: 12px 30px;
+	}
+
+
+</style>
+
+<!-- JavaScript -->
+<script>
+    // Fonction de type machine à écrire
+    document.addEventListener("DOMContentLoaded", function () {
+        const text = "Kennedy Merrelose";
+        const element = document.getElementById("typewriter");
+        let index = 0;
+
+        function typeEffect() {
+            if (index < text.length) {
+                element.textContent += text[index];
+                index++;
+                setTimeout(typeEffect, 80); // Ajustez la vitesse d'écriture ici
+            } else {
+                // Supprime le curseur après l'écriture
+                element.style.borderRight = "none";
+            }
+        }
+
+        typeEffect();
+    });
+</script>
+
 		  
-		<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2>about me</h2>
-			</div>
-			<div class="container">
-				<div class="about-content">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-about-txt">
-								<h3>
-									I am a Professional UI/UX Designer and Web developer. Consectetur an adipisi elita, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
-								</h3>
-								<p>
-									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspi unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam vo luptatem quia voluptas sit aspernatur aut odit aut fugit,
-								</p>
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>phone</h3>
-											<p>987-123-6547</p>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>email</h3>
-											<p>browny@info.com</p>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>website</h3>
-											<p>www.brownsine.com</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-offset-1 col-sm-5">
-							<div class="single-about-img">
-								<img src="assets/images/about/profile_image.jpg" alt="profile_image">
-								<div class="about-list-icon">
-									<ul>
-										<li>
-											<a href="#">
-												<i  class="fa fa-facebook" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
-										<li>
-											<a href="#">
-												<i  class="fa fa-dribbble" aria-hidden="true"></i>
-											</a>
-											
-										</li><!-- / li -->
-										<li>
-											<a href="#">
-												<i  class="fa fa-twitter" aria-hidden="true"></i>
-											</a>
-											
-										</li><!-- / li -->
-										<li>
-											<a href="#">
-												<i  class="fa fa-linkedin" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
-										<li>
-											<a href="#">
-												<i  class="fa fa-instagram" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
-										
-										
-									</ul><!-- / ul -->
-								</div><!-- /.about-list-icon -->
+		<!-- About Section Start -->
+<section id="about" class="about">
+    <div class="section-heading text-center">
+        <h2>About Me</h2>
+        <p>Discover my journey, skills, and passion for technology.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Profile Image and Social Icons -->
+            <div class="col-md-5">
+                <div class="profile-container text-center">
+                    <img src="assets/images/about/imageportfolio.jpeg" alt="profile_image" class="profile-img">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- About Text -->
+            <div class="col-md-7">
+                <div class="about-content">
+                    <h3>Hello, I'm MERRELOSE kennedy</h3>
+                    <p>
+                        I am a passionate and dedicated <b>UI/UX Designer</b> and <b>Web Developer</b> with years of experience crafting seamless digital experiences. My mission is to blend creativity and functionality to deliver solutions that not only look great but also perform exceptionally.
+                    </p>
+                    <p>
+                        Over the years, I’ve honed my skills in <b>design, development, and problem-solving</b>. I thrive in collaborative environments, working alongside like-minded professionals to turn innovative ideas into reality.
+                    </p>
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4>Phone</h4>
+                                <p>+229 015-09-02-241</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Email</h4>
+                                <p>kennedymerrelose@gmail.com</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Website</h4>
+                                <p>www.brownsine.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
 
-							</div>
+<!-- CSS -->
+<style>
+    .about {
+        background: #f9f9f9;
+        padding: 60px 0;
+    }
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--/.about-->
-		<!--about end -->
-		
+    .section-heading h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .section-heading p {
+        color: #666;
+        font-size: 16px;
+    }
+
+    .profile-container {
+        position: relative;
+    }
+
+    .profile-img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-icons li {
+        display: inline-block;
+    }
+
+    .social-icons li a {
+        font-size: 20px;
+        color: #007bff;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons li a:hover {
+        color: #0056b3;
+    }
+
+    .about-content h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+	.contact-info {
+		width: 900px;
+    }
+
+    .contact-info h4 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+	.contact-info .col-md-4 {
+        width: 270px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        color: #333;
+		padding: 0px;
+    }
+
+    .contact-info .row {
+        margin-top: 20px;
+    }
+</style>
+
+<!-- Skill start -->
 		<section id="skills" class="skills">
 			<div class="skill-content">
 			  <div class="section-heading text-center">
@@ -439,7 +588,7 @@
 }
 
 .progress-bar {
-  background-color: #4caf50; /* Couleur des barres */
+  background-color: #007bff; /* Couleur des barres */
   transition: width 1s ease-in-out;
 }
 
@@ -985,153 +1134,198 @@
 		</section><!--/.portfolio-->
 		<!--portfolio end -->
 
-		<!--clients start -->
-		<section id="clients" class="clients">
-			<div class="section-heading text-center">
-				<h2>clients</h2>
-			</div>
-			<div class="clients-area">
-				<div class="container">
-					<div class="owl-carousel owl-theme" id="client">
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c1.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c2.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c3.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c4.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c5.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c6.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c7.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-					</div><!--/.owl-carousel-->
-				</div><!--/.container-->
-			</div><!--/.clients-area-->
+<!-- Contact Section Start -->
+<section id="contact" class="contact">
+    <div class="section-heading text-center">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+    </div>
+    <div class="container">
+        <div class="contact-content">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-md-offset-1 col-md-5 col-sm-6">
+                    <div class="single-contact-box">
+                        <div class="contact-form">
+                            <form>
+                                <div class="form-group fade-in-left">
+                                    <input type="text" class="form-control shadow-input" id="input" placeholder="Your Name*" name="name">
+                                </div>
+                                <div class="form-group fade-in-right">
+                                    <input type="email" class="form-control shadow-input" id="input" placeholder="Your Email*" name="email">
+                                </div>
+                                <div class="form-group fade-in-left">
+                                    <input type="text" class="form-control shadow-input" id="input" placeholder="Subject" name="subject">
+                                </div>
+                                <div class="form-group fade-in-right">
+                                    <textarea class="form-control shadow-input" rows="5" id="input" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="form-group text-center fade-in-up">
+                                    <button type="submit" class="btn btn-primary contact-btn">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
-		</section><!--/.clients-->
+                <!-- Contact Info -->
+                <div class="col-md-offset-1 col-md-5 col-sm-6">
+                    <div class="single-contact-box">
+                        <div class="contact-info fade-in-up">
+                            <h3>Let's Connect</h3>
+                            <p>Reach me via the following platforms:</p>
+                            <div class="contact-details">
+                                <p><i class="fa fa-phone"></i> +229 015 090 2241</p>
+                                <p><i class="fa fa-envelope"></i> kennedymerrelose@gmail.com</p>
+                                <p><i class="fa fa-globe"></i> www.yourwebsite.com</p>
+                            </div>
+                        </div><br><br>
+                        <div class="social-icons fade-in-loop">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
 
-		</section><!--/.clients-->
-		<!--clients end -->
+<!-- CSS for Styling and Animations -->
+<style>
+    /* General Styling */
+    .contact {
+        background: linear-gradient(to right, #f8f9fa, #ffffff);
+        padding: 60px 0;
+    }
 
-		<!--contact start -->
-		<section id="contact" class="contact">
-			<div class="section-heading text-center">
-				<h2>contact me</h2>
-			</div>
-			<div class="container">
-				<div class="contact-content">
-					<div class="row">
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-form">
-									<form>
-										<div class="row">
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button">submit</a>
-												</div><!--/.single-single-contact-btn-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-									</form><!--/form-->
-								</div><!--/.contact-form-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-adress">
-									<div class="contact-add-head">
-										<h3>browny star</h3>
-										<p>uI/uX designer</p>
-									</div>
-									<div class="contact-add-info">
-										<div class="single-contact-add-info">
-											<h3>phone</h3>
-											<p>987-123-6547</p>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>email</h3>
-											<p>browny@info.com</p>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>website</h3>
-											<p>www.brownsine.com</p>
-										</div>
-									</div>
-								</div><!--/.contact-adress-->
-								<div class="hm-foot-icon">
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-dribbble"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-instagram"></i></a></li><!--/li-->
-									</ul><!--/ul-->
-								</div><!--/.hm-foot-icon-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.contact-content-->
-			</div><!--/.container-->
+    .section-heading {
+        margin-bottom: 40px;
+    }
 
-		</section><!--/.contact-->
-		<!--contact end -->
+    .form-control {
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 15px;
+        transition: all 0.3s;
+    }
+	#input {
+		border-radius: 7px;
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+	}
+
+    .shadow-input {
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control:hover {
+        border-color: #007bff;
+        box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.2);
+    }
+
+    .contact-btn {
+        background-color: #007bff;
+        border: none;
+        color: #fff;
+        padding: 10px 25px;
+        border-radius: 30px;
+        transition: all 0.3s;
+    }
+
+    .contact-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .contact-info h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .social-icons ul {
+        list-style: none;
+        padding: 0;
+		margin-right: 270px;
+        display: flex;
+		gap: 20px;
+        justify-content: space-around;
+    }
+
+    .social-icons ul li {
+        display: inline-block;
+    }
+
+    .social-icons ul li a {
+        font-size: 20px;
+        color: #007bff;
+        transition: color 0.3s;
+    }
+
+    .social-icons ul li a:hover {
+        color: #0056b3;
+    }
+
+    /* Animations */
+    .fade-in-left {
+        opacity: 0;
+        transform: translateX(-20px);
+        animation: fadeIn 1s forwards;
+    }
+
+    .fade-in-right {
+        opacity: 0;
+        transform: translateX(20px);
+        animation: fadeIn 1s forwards;
+    }
+
+    .fade-in-up {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s forwards;
+    }
+
+    .fade-in-loop {
+        animation: fadeInLoop 2s infinite alternate;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+
+    @keyframes fadeInLoop {
+        0% {
+            opacity: 0.5;
+            transform: scale(1);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+</style>
+
+
 
 		<!--footer-copyright start-->
 		<footer id="footer-copyright" class="footer-copyright">
 			<div class="container">
 				<div class="hm-footer-copyright text-center">
 					<p>
-						&copy; copyright yourname. design and developed by <a href="https://www.themesine.com/">themesine</a>
+						&copy; copyright Kennedy MERRELOSE. design and developed by <a href="https://www.themesine.com/">monsite</a>
 					</p><!--/p-->
 				</div><!--/.text-center-->
 			</div><!--/.container-->
