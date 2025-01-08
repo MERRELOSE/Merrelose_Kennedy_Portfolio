@@ -87,6 +87,7 @@
         <![endif]-->
 		
 		<!-- top-area Start -->
+		<!-- top-area Start -->
 		<header class="top-area">
 			<div class="header-area">
 				<!-- Start Navigation -->
@@ -107,8 +108,8 @@
 			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 			                <li class=" smooth-menu active"></li>
-			                    <li class="smooth-menu"><a href="#education">education</a></li>
-			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
+                                <li class="smooth-menu"><a href="#skills">skills</a></li>
+			                    <li class=" smooth-menu"><a href="#education">education</a></li>
 			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
 			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
 			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
@@ -124,8 +125,8 @@
 
 		</header><!-- /.top-area-->
 		<!-- top-area End -->
-	
-		<!-- Welcome Hero Start -->
+
+<!-- Welcome Hero Start -->
 <section id="welcome-hero" class="welcome-hero">
     <div class="container">
         <div class="row align-items-center">
@@ -148,69 +149,69 @@
 
 <!-- CSS -->
 <style>
-    /* Arrière-plan harmonisé */
+    /* Global Responsiveness */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* Welcome Hero Section */
     .welcome-hero {
-        background: linear-gradient(to bottom, #1a1a1a, #333); /* Remplacez par vos couleurs */
-        color: #ffffff; /* Texte principal */
-        padding: 100px 0;
+        background: linear-gradient(to bottom, #1a1a1a, #333);
+        color: #ffffff;
+        padding: 60px 20px;
         text-align: center;
         position: relative;
     }
 
-    /* Texte principal */
     .welcome-hero .hero-text h1 {
-        font-size: 48px;
+        font-size: 36px;
         font-weight: bold;
-        line-height: 1.4;
+        line-height: 1.2;
         margin-bottom: 20px;
     }
 
-    /* Texte du nom animé */
-    .welcome-hero .hero-text h1 .name-highlight {
-        color: #f4b400; /* Couleur du texte animé (jaune/orange par défaut) */
+    .welcome-hero .hero-text h1 span {
+        color: #007bff;
+    }
+
+    .welcome-hero .hero-text .name-highlight {
+        color: #f4b400;
         text-transform: uppercase;
-        border-right: 2px solid #f4b400; /* Couleur du curseur clignotant */
+        border-right: 2px solid #f4b400;
         white-space: nowrap;
         overflow: hidden;
         display: inline-block;
+        font-size: 36px;
     }
 
-    .welcome-hero .hero-text h1 span {
-        color: #007bff; /* Accent secondaire (vert par défaut) */
-    }
-
-    /* Sous-titre */
     .welcome-hero .hero-subtitle {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 300;
-        margin-bottom: 30px;
-        letter-spacing: 1px;
-        color: #e0e0e0; /* Texte secondaire */
+        margin-bottom: 20px;
+        color: #e0e0e0;
     }
 
-    /* Bouton Télécharger */
-
-	contact-btn {
-		display: inline-block;
-        padding: 12px 30px;
-        font-size: 16px;
+    .contact-btn {
+        padding: 10px 25px;
+        font-size: 14px;
         font-weight: 600;
-        color: #1a1a1a; /* Texte du bouton */
-        background-color: #007bff; /* Couleur de fond du bouton */
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 25px;
         text-transform: uppercase;
-        border-radius: 30px;
-        transition: all 0.3s ease;
-        text-decoration: none;
         border: none;
+        text-decoration: none;
+        transition: all 0.3s ease;
     }
 
     .contact-btn:hover {
-        background-color: #0056b3; /* Couleur au survol */
-		color: #fff;
-        padding: 12px 30px;
-	}
+        background-color: #0056b3;
+    }
 
-
+    
 </style>
 
 <!-- JavaScript -->
@@ -225,9 +226,8 @@
             if (index < text.length) {
                 element.textContent += text[index];
                 index++;
-                setTimeout(typeEffect, 80); // Ajustez la vitesse d'écriture ici
+                setTimeout(typeEffect, 80);
             } else {
-                // Supprime le curseur après l'écriture
                 element.style.borderRight = "none";
             }
         }
@@ -235,6 +235,7 @@
         typeEffect();
     });
 </script>
+
 
 		  
 		<!-- About Section Start -->
@@ -373,6 +374,13 @@
     .contact-info .row {
         margin-top: 20px;
     }
+
+    @media (max-width: 576px) {
+
+		.contact-info .row {
+			width: 341px;
+    }
+	}
 </style>
 
 <!-- Skill start -->
@@ -474,11 +482,11 @@
 	<div class="container">
 		<div class="education-horizontal-timeline">
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="single-horizontal-timeline">
 						<div class="experience-time">
-							<h2>2008 - 2010</h2>
-							<h3>master <span>of </span> computer science</h3>
+							<h2>2021 - Aujourd'hui</h2>
+							<h3>Licence <span>en </span> Informatique</h3>
 						</div><!--/.experience-time-->
 						<div class="timeline-horizontal-border">
 							<i class="fa fa-circle" aria-hidden="true"></i>
@@ -487,21 +495,21 @@
 						<div class="timeline">
 							<div class="timeline-content">
 								<h4 class="title">
-									university of north carolina
+									UATM GASA Formation
 								</h4>
-								<h5>north carolina, USA</h5>
+								<h5>Cotonou, Bénin</h5>
 								<p class="description">
-									Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+									Actuellement en 3<sup>ème</sup> année, j'acquiers des compétences en systèmes informatiques, développement logiciel, et gestion de projets numériques.
 								</p>
 							</div><!--/.timeline-content-->
 						</div><!--/.timeline-->
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="single-horizontal-timeline">
 						<div class="experience-time">
-							<h2>2004 - 2008</h2>
-							<h3>bachelor <span>of </span> computer science</h3>
+							<h2>2020</h2>
+							<h3>Formation <span>professionnelle en </span> Design</h3>
 						</div><!--/.experience-time-->
 						<div class="timeline-horizontal-border">
 							<i class="fa fa-circle" aria-hidden="true"></i>
@@ -510,35 +518,63 @@
 						<div class="timeline">
 							<div class="timeline-content">
 								<h4 class="title">
-									university of north carolina
+									Centre de Formation en Design
 								</h4>
-								<h5>north carolina, USA</h5>
+								<h5>Cotonou, Bénin</h5>
 								<p class="description">
-									Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+									J'ai suivi une formation professionnelle en design, ce qui m'a permis de perfectionner mes compétences en création graphique et en conception d'interfaces utilisateur (UI/UX).
 								</p>
 							</div><!--/.timeline-content-->
 						</div><!--/.timeline-->
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="single-horizontal-timeline">
 						<div class="experience-time">
-							<h2>2004 - 2008</h2>
-							<h3>bachelor <span>of </span> creative design</h3>
+							<h2>2019 - 2021</h2>
+							<h3>Baccalauréat <span>en </span> Sciences</h3>
 						</div><!--/.experience-time-->
 						<div class="timeline-horizontal-border">
 							<i class="fa fa-circle" aria-hidden="true"></i>
-							<span class="single-timeline-horizontal spacial-horizontal-line
-							"></span>
+							<span class="single-timeline-horizontal"></span>
 						</div>
 						<div class="timeline">
 							<div class="timeline-content">
 								<h4 class="title">
-									university of bolton
+									Lycée Général
 								</h4>
-								<h5>bolton, united kingdome</h5>
+								<h5>Cotonou, Bénin</h5>
 								<p class="description">
-									Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+									Obtention du Baccalauréat série C (Mathématiques et Physique-Chimie), avec mention.
+								</p>
+							</div><!--/.timeline-content-->
+						</div><!--/.timeline-->
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="single-horizontal-timeline">
+						<div class="experience-time">
+							<h2>2023</h2>
+							<h3>Formations <span>en ligne</span></h3>
+						</div><!--/.experience-time-->
+						<div class="timeline-horizontal-border">
+							<i class="fa fa-circle" aria-hidden="true"></i>
+							<span class="single-timeline-horizontal spacial-horizontal-line"></span>
+						</div>
+						<div class="timeline">
+							<div class="timeline-content">
+								<h4 class="title">
+									OpenClassrooms
+								</h4>
+								<h5>En ligne</h5>
+								<p class="description">
+									Certifications obtenues :
+									<ul>
+										<li>Développeur Web Junior</li>
+										<li>UI/UX Design</li>
+										<li>Initiation à la Programmation</li>
+									</ul>
+									<a href="certificats-openclassrooms.html" class="btn">Voir les certificats OpenClassrooms</a>
 								</p>
 							</div><!--/.timeline-content-->
 						</div><!--/.timeline-->
@@ -547,59 +583,49 @@
 			</div>
 		</div>
 	</div>
-
 </section><!--/.education-->
 <!--education end -->
-  
-  <style>
-	.gradient-bar {
-	  background: linear-gradient(90deg, #ff7e5f, #feb47b);
-	  transition: width 0.8s ease-in-out;
-	  color: white;
-	  text-align: center;
-	  padding: 2px 0;
+
+
+<style>
+	/* Certifications Gallery Style */
+	.certification-gallery {
+		display: flex;
+		justify-content: center;
+		gap: 15px;
+		margin-top: 15px;
 	}
-	.progressText {
-	  font-size: 1.1rem;
-	  font-weight: bold;
-	  margin-bottom: 10px;
+	.certification-gallery img {
+		width: 80px;
+		height: auto;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s;
+		cursor: pointer;
 	}
-	.progress-bar {
-  transition: width 1s ease-in-out;
+	.certification-gallery img:hover {
+		transform: scale(1.1);
+	}
+	.timeline-content .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-.category {
-  margin-bottom: 40px; /* Espace entre les catégories */
-}
+</style>
 
-.category h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333; /* Couleur du titre */
-}
-
-.barWrapper {
-  margin-bottom: 20px;
-}
-
-.progress {
-  height: 10px; /* Hauteur des barres */
-}
-
-.progress-bar {
-  background-color: #007bff; /* Couleur des barres */
-  transition: width 1s ease-in-out;
-}
-
-.progressText {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
-}
-
-  </style>
   
 
 
@@ -1067,72 +1093,122 @@
 		<!--profiles end -->
 
 		<!--portfolio start -->
-		<section id="portfolio" class="portfolio">
-			<div class="portfolio-details">
-				<div class="section-heading text-center">
-					<h2>portfolio</h2>
-				</div>
-				<div class="container">
-					<div class="portfolio-content">
-						<div class="isotope">
-							<div class="row">
+<section id="portfolio" class="portfolio">
+    <div class="portfolio-details">
+        <div class="section-heading text-center">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="container">
+            <div class="portfolio-content">
+                <!-- Filter Buttons -->
+                <div class="text-center mb-4">
+                    <button class="btn filter-btn active" data-filter="all">Tous</button>
+                    <button class="btn filter-btn" data-filter="design">Design</button>
+                    <button class="btn filter-btn" data-filter="development">Développement</button>
+                </div><br>
+                <!-- Portfolio Grid -->
+                <div class="row portfolio-grid">
+                    <!-- Design Project 1 -->
+                    <div class="col-sm-4 item design">
+                        <div class="portfolio-item">
+                            <img src="assets/images/portfolio/d1.jpg" alt="Design Project 1" />
+                            <div class="overlay">
+                                <a href="design-project-1.html" class="icon-link">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <p>UI/UX Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Design Project 2 -->
+                    <div class="col-sm-4 item design">
+                        <div class="portfolio-item">
+                            <img src="assets/images/portfolio/d2.jpg" alt="Design Project 2" />
+                            <div class="overlay">
+                                <a href="design-project-2.html" class="icon-link">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- Design Project 2 -->
+                      <div class="col-sm-4 item design">
+                        <div class="portfolio-item">
+                            <img src="assets/images/portfolio/d6.jpg" alt="Design Project 3" />
+                            <div class="overlay">
+                                <a href="design-project-3.html" class="icon-link">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- Design Project 2 -->
+                      <div class="col-sm-4 item design">
+                        <div class="portfolio-item">
+                            <img src="assets/images/portfolio/d4.jpg" alt="Design Project 4" />
+                            <div class="overlay">
+                                <a href="design-project-4.html" class="icon-link">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <p>Graphic Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Development Project 1 -->
+                    <div class="col-sm-4 item development">
+                        <div class="portfolio-item">
+                            <img src="assets/images/portfolio/p3.jpg" alt="Development Project 1" />
+                            <div class="overlay">
+                                <a href="development-project-1.html" class="icon-link">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <p>Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Development Project 2 -->
+                    <div class="col-sm-4 item development">
+                        <div class="portfolio-item">
+                            <img src="assets/images/portfolio/p4.jpg" alt="Development Project 2" />
+                            <div class="overlay">
+                                <a href="development-project-2.html" class="icon-link">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <p>App Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.portfolio-grid -->
+            </div><!-- /.portfolio-content -->
+        </div><!-- /.container -->
+    </div><!-- /.portfolio-details -->
+</section>
+<!--portfolio end -->
 
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/p1.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												ui/ux design
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-									<div class="item">
-										<img src="assets/images/portfolio/p2.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												ui/ux design
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
+<script>
+	document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        document.querySelectorAll('.portfolio-grid .item').forEach(item => {
+            if (filter === 'all' || item.classList.contains(filter)) {
+                item.classList.add('show');
+            } else {
+                item.classList.remove('show');
+            }
+        });
+    });
+});
 
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/p3.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												web design
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
+// Initial display: show all items
+document.querySelectorAll('.portfolio-grid .item').forEach(item => item.classList.add('show'));
 
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/p4.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												web development
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-									<div class="item">
-										<img src="assets/images/portfolio/p5.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												web development
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-							</div><!-- /.row -->
-						</div><!--/.isotope-->
-					</div><!--/.gallery-content-->
-				</div><!--/.container-->
-			</div><!--/.portfolio-details-->
-
-		</section><!--/.portfolio-->
-		<!--portfolio end -->
+</script>
 
 <!-- Contact Section Start -->
 <section id="contact" class="contact">
@@ -1261,6 +1337,16 @@
 		gap: 20px;
         justify-content: space-around;
     }
+	@media (max-width: 576px) {
+        .social-icons ul {
+			margin-right: 75px;
+    	}
+
+		.contact-info {
+			width: 341px;
+		}
+    }
+
 
     .social-icons ul li {
         display: inline-block;

@@ -667,6 +667,92 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     top:0;
 }/*.isotope-overlay*/
 
+/* General styles */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay styles */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .icon-link {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.overlay .icon-link:hover {
+    background: #0056b3;
+}
+
+.overlay p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Filter button styles */
+.filter-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #0056b3;
+}
+
+.portfolio-grid .item {
+    display: none;
+}
+
+.portfolio-grid .item.show {
+    display: block;
+}
+
+
 /*-------------------------------------
         10. Clients
 --------------------------------------*/
